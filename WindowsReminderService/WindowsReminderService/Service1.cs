@@ -64,11 +64,10 @@ namespace WindowsReminderService
         {
             eventLog1.WriteEntry("In OnContinue.");
             log("In OnContinue.");
-
         }
 
         /// <summary>
-        /// 定时器中定时执行的任务
+        /// 定时器中定时执行的任务数
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="args"></param>
