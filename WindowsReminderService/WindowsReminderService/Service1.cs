@@ -46,6 +46,9 @@ namespace WindowsReminderService
             timer.Interval = 60000; // 60 seconds 60秒执行一次
             timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
             timer.Start();
+
+            Interop.ShowMessageBox("This a message from AlertService.",
+                       "AlertService Message");
         }
 
         /// <summary>
