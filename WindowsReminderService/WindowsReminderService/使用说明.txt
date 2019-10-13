@@ -1,0 +1,9 @@
+安装服务：
+1.打开cmd (以管理员身份)，并且进入文件目录；
+2.安装服务：
+    InstallUtil.exe  C:\\Users\Desktop\Debug\WindowsReminderService.exe
+
+卸载服务：
+1.卸载服务：
+    InstallUtil.exe  -u C:\Users\Desktop\Debug\WindowsReminderService.exe
+
