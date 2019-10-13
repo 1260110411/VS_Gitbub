@@ -46,9 +46,6 @@ namespace WindowsReminderService
             timer.Interval = 60000; // 60 seconds 60秒执行一次
             timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
             timer.Start();
-
-            Interop.ShowMessageBox("This a message from AlertService.",
-                       "AlertService Message");
         }
 
         /// <summary>
@@ -67,6 +64,7 @@ namespace WindowsReminderService
         {
             eventLog1.WriteEntry("In OnContinue.");
             log("In OnContinue.");
+
         }
 
         /// <summary>
@@ -79,6 +77,9 @@ namespace WindowsReminderService
             // TODO: Insert monitoring activities here.
             eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
             log("the timer");
+            string AlertTxt = System.IO.File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\AlertTxt\Alert.txt"); //获取当前路径：AppDomain.CurrentDomain.BaseDirectory用于类
+                                                                                                                          // Application.StartupPath用于Winform
+            Interop.ShowMessageBox(AlertTxt, "待办事项提醒");
         }
         
         /// <summary>

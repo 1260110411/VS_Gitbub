@@ -14,6 +14,7 @@ namespace WindowsReminderService
         public static void ShowMessageBox(string message, string title)
         {
             int resp = 0;
+            //简单的交互，服务可以通过WTSSendMessage 函数，在用户Session 上显示消息窗口
             WTSSendMessage(
                 WTS_CURRENT_SERVER_HANDLE,
                 WTSGetActiveConsoleSessionId(),
