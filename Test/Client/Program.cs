@@ -27,15 +27,26 @@ namespace Client
         }
         static void Main(string[] args)
             {
-                // 创建委托实例
-                NumberChanger nc1 = AddNum;//委托中添加方法
-                NumberChanger nc2 = new NumberChanger(MultNum);
-                // 使用委托对象调用方法
-                nc1(25);
-                Console.WriteLine("Value of Num: {0}", getNum());
-                nc2(5);
-                Console.WriteLine("Value of Num: {0}", getNum());
-                Console.ReadKey();
-            }
+            //// 创建委托实例
+            //NumberChanger nc1 = AddNum;//委托中添加方法
+            //NumberChanger nc2 = new NumberChanger(MultNum);
+            //// 使用委托对象调用方法
+            //nc1(25);
+            //Console.WriteLine("Value of Num: {0}", getNum());
+            //nc2(5);
+            //Console.WriteLine("Value of Num: {0}", getNum());
+            //Console.ReadKey();
+
+            // 创建委托实例
+            NumberChanger nc;
+            NumberChanger nc1 = new NumberChanger(AddNum);
+            NumberChanger nc2 = new NumberChanger(MultNum);
+            nc = nc1;
+            nc += nc2;
+            // 调用多播
+            nc(5);
+            Console.WriteLine("Value of Num: {0}", getNum());
+            Console.ReadKey();
+        }
         }
 }
