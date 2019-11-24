@@ -1,0 +1,85 @@
+namespace 依赖
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var driver = new Driver(new LightTank());
+            driver.Drive();
+            Console.ReadKey();
+        }
+    }
+    /// <summary>
+    /// 人
+    /// </summary>
+    class Driver {
+        private IVehicle _vehicle;
+        public Driver(IVehicle vehicle)
+        {
+            _vehicle = vehicle;
+        }
+        public void Drive() {
+
+            _vehicle.Run();
+        }
+    }
+    /// <summary>
+    /// 车
+    /// </summary>
+    interface IVehicle {
+        void Run();
+    }
+    class car : IVehicle {
+        public void Run()
+        {
+            Console.WriteLine("car is runing...");
+
+        }
+    }
+    class Truck : IVehicle
+    {
+        public void Run()
+        {
+            Console.WriteLine("truck is runing....");
+        }
+    }
+    interface IWeapen {
+        void Fire();
+    }
+    interface ITank:IVehicle,IWeapen
+    {
+    }
+    class LightTank : ITank
+    {
+        public void Fire()
+        {
+            Console.WriteLine("Boom");
+        }
+        public void Run()
+        {
+            Console.WriteLine("Ka ka ka...");
+        }
+    }
+    class MediumTank : ITank
+    {
+        public void Fire()
+        {
+            Console.WriteLine("Boom");
+        }
+        public void Run()
+        {
+            Console.WriteLine("Ka! ka! ka! ...");
+        }
+    }
+    class HeaveyTank : ITank
+    {
+        public void Fire()
+        {
+            Console.WriteLine("Boom");
+        }
+        public void Run()
+        {
+            Console.WriteLine("Ka!! ka!! ka!! ...");
+        }
+    }
+}
