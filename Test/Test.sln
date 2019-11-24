@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{8304A9D0-A81F-4122-B3E1-2261B303F3B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTest", "EventTest\EventTest.csproj", "{FCA8144F-6F2F-4DA8-9B45-F037EF483163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event1", "Event1\Event1.csproj", "{488CA156-18CA-496B-A1E5-5B703AF87E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryFormatter", "序列化与反序列化\BinaryFormatter.csproj", "{C9E353EF-D972-46EA-A35E-BB78370C31AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "序列化与反序列化", "序列化与反序列化", "{3453EDFC-01F7-45F4-824A-F89A169E32A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapFormatter", "SoapFormatter\SoapFormatter.csproj", "{05F4D8F0-793C-402F-B1C9-B7B94FE8E2C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSerializer", "XmlSerializer\XmlSerializer.csproj", "{5053C65D-0F27-431E-BB29-A474F44D9CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +33,33 @@ Global
 		{8304A9D0-A81F-4122-B3E1-2261B303F3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8304A9D0-A81F-4122-B3E1-2261B303F3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8304A9D0-A81F-4122-B3E1-2261B303F3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA8144F-6F2F-4DA8-9B45-F037EF483163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA8144F-6F2F-4DA8-9B45-F037EF483163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA8144F-6F2F-4DA8-9B45-F037EF483163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA8144F-6F2F-4DA8-9B45-F037EF483163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488CA156-18CA-496B-A1E5-5B703AF87E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488CA156-18CA-496B-A1E5-5B703AF87E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488CA156-18CA-496B-A1E5-5B703AF87E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488CA156-18CA-496B-A1E5-5B703AF87E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E353EF-D972-46EA-A35E-BB78370C31AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E353EF-D972-46EA-A35E-BB78370C31AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E353EF-D972-46EA-A35E-BB78370C31AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E353EF-D972-46EA-A35E-BB78370C31AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F4D8F0-793C-402F-B1C9-B7B94FE8E2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F4D8F0-793C-402F-B1C9-B7B94FE8E2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F4D8F0-793C-402F-B1C9-B7B94FE8E2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F4D8F0-793C-402F-B1C9-B7B94FE8E2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5053C65D-0F27-431E-BB29-A474F44D9CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5053C65D-0F27-431E-BB29-A474F44D9CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5053C65D-0F27-431E-BB29-A474F44D9CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5053C65D-0F27-431E-BB29-A474F44D9CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9E353EF-D972-46EA-A35E-BB78370C31AD} = {3453EDFC-01F7-45F4-824A-F89A169E32A1}
+		{05F4D8F0-793C-402F-B1C9-B7B94FE8E2C0} = {3453EDFC-01F7-45F4-824A-F89A169E32A1}
+		{5053C65D-0F27-431E-BB29-A474F44D9CA3} = {3453EDFC-01F7-45F4-824A-F89A169E32A1}
 	EndGlobalSection
 EndGlobal
