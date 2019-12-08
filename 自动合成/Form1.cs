@@ -172,7 +172,6 @@ namespace 自动合成
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        //static string[] DMembersAll = { "马渊宙", "曹县林", "张亚雄", "葛广超" }; //程序员成员名称
 
         private void button1_Click(object sender, EventArgs e)
         {
