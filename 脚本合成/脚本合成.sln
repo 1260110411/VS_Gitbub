@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "脚本合成", "脚本合成.csproj", "{31575336-EC6A-4CB6-9C97-F9FBD31D2EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "自动合成", "..\自动合成\自动合成.csproj", "{0B8142F3-7459-4E15-8C13-631599450490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31575336-EC6A-4CB6-9C97-F9FBD31D2EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31575336-EC6A-4CB6-9C97-F9FBD31D2EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31575336-EC6A-4CB6-9C97-F9FBD31D2EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31575336-EC6A-4CB6-9C97-F9FBD31D2EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8142F3-7459-4E15-8C13-631599450490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8142F3-7459-4E15-8C13-631599450490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8142F3-7459-4E15-8C13-631599450490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8142F3-7459-4E15-8C13-631599450490}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
