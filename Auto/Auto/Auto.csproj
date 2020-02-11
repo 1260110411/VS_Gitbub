@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A48C72E0-660F-433A-A623-AC75CAE9B715}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Auto</RootNamespace>
+    <AssemblyName>Auto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectSQL.cs" />
+    <Compile Include="CreateProblem.cs" />
+    <Compile Include="Create_Problem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Problem.Designer.cs">
+      <DependentUpon>Create_Problem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Create_Problem.resx">
+      <DependentUpon>Create_Problem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImageStore_LF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImageStore_NB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beijingjingdiaobiaotou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelRelation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Completed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultMachine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaultPeople.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event_flag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_warn2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Legend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_break_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_break_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_break_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_ok_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_ok_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link_ok_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo - 副本2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO2-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machineProductCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoAuthorityPicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\node_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoPicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\part.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBox_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uninstall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Round%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warn3 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warn4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word-2013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workHour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\待审批.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\密码1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\审批成功.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未申请审批.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未申请审批1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c34611e673de4cf1be988819ac0285aa_th.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\挂机功能整体背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最小化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_img_005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logomes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\隐藏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\展开.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editRelation.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

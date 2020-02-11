@@ -40,10 +40,10 @@ namespace WindowsReminderServiceIII
         {
             string AlertTxt = System.IO.File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\AlertTxt\Alert.txt"); //获取当前路径：AppDomain.CurrentDomain.BaseDirectory用于类                                                                                                           // Application.StartupPath用于Winform
             Interop.ShowMessageBox(AlertTxt, "待办事项提醒");
-            using (SpeechSynthesizer synth = new SpeechSynthesizer())//引用system.speech,语音朗读该文字
-            {
-                synth.Speak(AlertTxt);
-            }
+            //using (SpeechSynthesizer synth = new SpeechSynthesizer())//引用system.speech,语音朗读该文字
+            //{
+            //    synth.Speak(AlertTxt);
+            //}
         }
     }
 }

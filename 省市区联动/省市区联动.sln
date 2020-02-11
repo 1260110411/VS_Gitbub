@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "省市区联动", "省市区联动\省市区联动.csproj", "{395E4C14-8762-4574-8490-C5CFD60EE071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "断开式数据操作", "断开式数据操作\断开式数据操作.csproj", "{D63CDBB0-98A6-4702-9C9B-912471E19F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "上下翻页", "上下翻页\上下翻页.csproj", "{961906F1-0FEF-43D1-B0D3-39A15B45AF17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{395E4C14-8762-4574-8490-C5CFD60EE071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395E4C14-8762-4574-8490-C5CFD60EE071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395E4C14-8762-4574-8490-C5CFD60EE071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395E4C14-8762-4574-8490-C5CFD60EE071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63CDBB0-98A6-4702-9C9B-912471E19F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63CDBB0-98A6-4702-9C9B-912471E19F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63CDBB0-98A6-4702-9C9B-912471E19F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63CDBB0-98A6-4702-9C9B-912471E19F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961906F1-0FEF-43D1-B0D3-39A15B45AF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961906F1-0FEF-43D1-B0D3-39A15B45AF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961906F1-0FEF-43D1-B0D3-39A15B45AF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961906F1-0FEF-43D1-B0D3-39A15B45AF17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
